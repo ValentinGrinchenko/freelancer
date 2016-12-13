@@ -1,0 +1,195 @@
+{% load staticfiles %}
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Freelancer</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+    <link href="{% static 'css/mycss.css' %}" rel="stylesheet">
+    <link href="{% static 'css/header.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fonts.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#">
+					<img src="{% static 'img/logo.png' %}" alt="#">
+				</a>
+			</div>
+			<div class="header__nav">
+				<ul class="nav__list">
+					<li class="list__item list__item--active"><a href="#">About</a></li>
+					<li class="list__item"><a href="#">Work</a></li>
+					<li class="list__item"><a href="#">Portfolio</a></li>
+					<li class="list__item"><a href="#">Contact</a></li>
+					<li class="list__item">
+						<a href="#">
+							<i class="twitter"></i>
+						</a>
+					</li>
+					<li class="list__item">
+						<a href="#">
+							<i class="facebook"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="main-bg">
+			<div class="main__inner">
+				<h2 class="main__title">intelligence<br>is nothing without<br>ambition<span class="red">.</span></h2>
+				<span class="main__posttitle">We’re small but impressive creative agency.</span>
+				<input type="submit" value="Read More" class="main__button">
+			</div>
+		</div>
+		<div class="main__inner">
+			<div class="advantages">
+				<div class="advantages__item">
+					<h3 class="advantages__title">Peace<br>of Mind<span class="red">.</span></h3>
+					<span class="advantages__text">
+						You’re safe with us. The privacy and security of your financial information is our top priority.
+					</span>
+					<a href="#" class="advantages__more more">more</a>
+				</div>
+				<div class="advantages__item">
+					<h3 class="advantages__title">Free<span class="red">.</span><br>Actually free</h3>
+					<span class="advantages__text">
+						No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.
+					</span>
+					<a href="#" class="advantages__more more">more</a>
+				</div>
+				<div class="advantages__item">
+					<h3 class="advantages__title">Simple<br>payments<span class="red">.</span></h3>
+					<span class="advantages__text">
+						The same debit card you use to buy coffee lets deposit money straight to your bank account.
+					</span>
+					<a href="#" class="advantages__more more">more</a>
+				</div>
+			</div>
+			<div class="portfolio">
+				<img src="{% static 'img/portfolio.jpg' %}" alt="portfolio" class="portfolio__img">
+				<div class="portfolio__textarea">
+					<h2 class="portfolio__title">Portfolio<span class="red">.</span></h2>
+					<span class="portfolio__posttitle">We are small, but strong team</span>
+					<p class="portfolio__text">
+						No more pricing grids. No more fine print.<br>Sending and receiving cash is free without gimmicks.
+					</p>
+					<p class="portfolio__text">
+						The same debit card you use to buy coffee lets<br>deposit money straight to your bank account.
+					</p>
+					<a href="" class="portfolio__more more">more</a>
+				</div>
+			</div>
+			<div class="team">
+				<div class="team__titles">
+					<h2 class="team__title">Our Team<span class="red">.</span></h2>
+					<span class="team__posttitle">They are big but still friendly.</span>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/joey.jpg' %}" alt="photo">
+					<h2 class="team__name">Joey</h2>
+					<span class="team__prof">Web developer</span>
+					<span class="team__features">Coffee lover.  Always on bike. iPhone fan</span>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/matt.jpg' %}" alt="photo">
+					<h2 class="team__name">Matt</h2>
+					<span class="team__prof">Web designer</span>
+					<span class="team__features">MTB Biker. Photoshop Master. Loving Father.</span>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/mike.jpg' %}" alt="photo">
+					<h2 class="team__name">Mike</h2>
+					<span class="team__prof">Copywriter</span>
+					<span class="team__features">Drummer. Soup lover. Beer Drinker. Cyclist.</span>
+				</div>
+				<a href="#" class="team__more more">more</a>
+			</div>
+			<div class="team">
+				<div class="team__titles">
+					<h2 class="team__title">Our works<span class="red">.</span></h2>
+					<span class="team__posttitle">Few examples of our works</span>
+				</div>
+				<div class="team__item">
+					<img src="{% static 'img/lend1.jpg' %}" alt="photo">
+					<h2 class="team__name">Work1</h2>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/lend2.jpg' %}" alt="photo">
+					<h2 class="team__name">Work2</h2>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/lend3.jpg' %}" alt="photo">
+					<h2 class="team__name">Work3</h2>
+				</div>
+				<a href="#" class="team__more more">more</a>
+			</div>
+			<div class="team">
+				<div class="team__titles">
+					<h2 class="team__title">Our office<span class="red">.</span></h2>
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/1.jpg' %}" alt="photo">
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/2.jpg' %}" alt="photo">
+				</div>
+				<div class="team__item">
+					<img class="team__photo" src="{% static 'img/3.JPG' %}" alt="photo">
+				</div>
+				<a href="#" class="team__more more">more</a>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__social">
+		<a href="#" class="footer__item">
+			<img src="{% static 'img/twitter-f.png' %}" alt="twitter">
+		</a>
+		<a href="#" class="footer__item">
+			<img src="{% static 'img/instagram-f.png' %}" alt="instagram">
+		</a>
+		<a href="#" class="footer__item">
+			<img src="{% static 'img/facebook-f.png' %}" alt="facebook">
+		</a>
+		<a href="#" class="footer__item">
+			<img src="{% static 'img/google-f.png' %}" alt="google">
+		</a>
+	</div>
+	<div class="footer__copyright">
+		<span class="footer__text">© Freelancer - Designed by Wojtek Kwiatkowski</span>
+	</div>
+</footer>
+    <script type="text/javascript" src="{% static 'js/jQuery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'libs/html5shiv/es5-shim.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'libs/html5shiv/html5shiv.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'libs/html5shiv/html5shiv-printshiv.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'libs/respond/respond.min.js' %}"></script>
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+</body>
+</html>
